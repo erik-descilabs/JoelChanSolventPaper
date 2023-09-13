@@ -1,0 +1,301 @@
+item: cscw50_researchers
+Traceback (most recent call last):
+  File "word-level-to-label-level.py", line 10, in <module>
+    word_level = pd.read_excel(in_name)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/io/excel.py", line 653, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/io/excel.py", line 424, in __init__
+    self.book = xlrd.open_workbook(filepath_or_buffer)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/xlrd/__init__.py", line 170, in open_workbook
+    raise XLRDError(FILE_FORMAT_DESCRIPTIONS[file_format]+'; not supported')
+xlrd.biffh.XLRDError: Excel xlsx file; not supported
+compute-tf-idfs.py:119: FutureWarning: set_value is deprecated and will be removed in a future release. Please use .at[] or .iat[] accessors instead
+  papers.set_value(index, 'tfidfs_%s' %bow_type, tfidfs_words)
+abstract_tokens      50
+background_tokens    50
+findings_tokens      50
+mechanism_tokens     50
+paperID              50
+problem_tokens       50
+dtype: int64
+Computing dfs...
+Computing idfs...
+Traceback (most recent call last):
+  File "get-vectors.py", line 42, in <module>
+    for line in open(BASE_VECTOR_FILE).readlines():
+IOError: [Errno 2] No such file or directory: 'models/glove.papers.600d.cscw+chi.2010-2017.txt'
+use-labels-experiment-tfidf.py:126: RuntimeWarning: Mean of empty slice
+  'sim': np.nanmean(sims) # average of the component pair similarities
+Running similarity metric:  MECH
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  PURP_MECH
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  PURP
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  ALL_WORDS
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  BKGD_PURP_MECH
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  FIND
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Done and done!
+item: cscw50_upworkers
+Traceback (most recent call last):
+  File "word-level-to-label-level.py", line 10, in <module>
+    word_level = pd.read_excel(in_name)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/io/excel.py", line 653, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/io/excel.py", line 424, in __init__
+    self.book = xlrd.open_workbook(filepath_or_buffer)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/xlrd/__init__.py", line 170, in open_workbook
+    raise XLRDError(FILE_FORMAT_DESCRIPTIONS[file_format]+'; not supported')
+xlrd.biffh.XLRDError: Excel xlsx file; not supported
+compute-tf-idfs.py:119: FutureWarning: set_value is deprecated and will be removed in a future release. Please use .at[] or .iat[] accessors instead
+  papers.set_value(index, 'tfidfs_%s' %bow_type, tfidfs_words)
+abstract_tokens      50
+background_tokens    50
+findings_tokens      50
+mechanism_tokens     50
+paperID              50
+problem_tokens       50
+dtype: int64
+Computing dfs...
+Computing idfs...
+Traceback (most recent call last):
+  File "get-vectors.py", line 42, in <module>
+    for line in open(BASE_VECTOR_FILE).readlines():
+IOError: [Errno 2] No such file or directory: 'models/glove.papers.600d.cscw+chi.2010-2017.txt'
+use-labels-experiment-tfidf.py:126: RuntimeWarning: Mean of empty slice
+  'sim': np.nanmean(sims) # average of the component pair similarities
+Running similarity metric:  MECH
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  PURP_MECH
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  PURP
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  ALL_WORDS
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  BKGD_PURP_MECH
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  FIND
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Done and done!
+item: cscw50_mturk
+Traceback (most recent call last):
+  File "word-level-to-label-level.py", line 10, in <module>
+    word_level = pd.read_excel(in_name)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/util/_decorators.py", line 188, in wrapper
+    return func(*args, **kwargs)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/io/excel.py", line 350, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/io/excel.py", line 653, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/pandas/io/excel.py", line 424, in __init__
+    self.book = xlrd.open_workbook(filepath_or_buffer)
+  File "/home/taco/Documents/JoelChanSolventPaper/venv/lib/python2.7/site-packages/xlrd/__init__.py", line 170, in open_workbook
+    raise XLRDError(FILE_FORMAT_DESCRIPTIONS[file_format]+'; not supported')
+xlrd.biffh.XLRDError: Excel xlsx file; not supported
+compute-tf-idfs.py:119: FutureWarning: set_value is deprecated and will be removed in a future release. Please use .at[] or .iat[] accessors instead
+  papers.set_value(index, 'tfidfs_%s' %bow_type, tfidfs_words)
+abstract_tokens      50
+background_tokens    50
+findings_tokens      50
+mechanism_tokens     50
+paperID              50
+problem_tokens       50
+dtype: int64
+Computing dfs...
+Computing idfs...
+Traceback (most recent call last):
+  File "get-vectors.py", line 42, in <module>
+    for line in open(BASE_VECTOR_FILE).readlines():
+IOError: [Errno 2] No such file or directory: 'models/glove.papers.600d.cscw+chi.2010-2017.txt'
+Running similarity metric:  MECH
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  PURP_MECH
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  PURP
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  ALL_WORDS
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  BKGD_PURP_MECH
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Running similarity metric:  FIND
+	Getting combinations...
+	Getting results
+		 for K =  1
+		 for K =  2
+		 for K =  5
+		 for K =  10
+		 for K =  15
+		 for K =  20
+		 for K =  25
+		 for K =  30
+Done and done!
